@@ -12,9 +12,13 @@
  ~~~
  /Applications/Xcode.app/Contents/SharedFrameworks/DVTFoundation.framework/Versions/A/Resources/symbolicatecrash
  ~~~
- 当然我可以每次都find，不过那样太浪费时间了。如果后续Xcode版本升级了，可以改一下这个目录。
+ 当然我可以每次都find，不过那样太浪费时间了。如果后续Xcode版本升级了，可以改一下这个目录。 用 
  
-6. 用 find /Applications/Xcode.app -name symbolicatecrash -type f 命令可以找到所在都路径。
+ ~~~
+ find /Applications/Xcode.app -name symbolicatecrash -type f 
+ ~~~
+ 
+ 命令可以找到所在都路径。
 
 
 # 使用方法：
