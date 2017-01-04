@@ -37,4 +37,5 @@ echo "dSYMFile resut:"
 dwarfdump --uuid $dSYMFile
 echo "crashFile resut:"
 grep "slice_uuid" original.crash
+grep "UUID" original.crash
 /Applications/Xcode.app/Contents/SharedFrameworks/DVTFoundation.framework/Versions/A/Resources/symbolicatecrash original.crash $dSYMFile > dsym.crash
