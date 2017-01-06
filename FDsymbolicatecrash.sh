@@ -24,6 +24,9 @@ if [ ! -n "$1" ] ;then
     echo "You have not input a url. symbolicatecrash a local file"
 else
     echo "The url input is $1"
+    echo "remove local dSYM file"
+    rm -r *.dSYM
+    rm *.zip
     wget $1
     zipFile=`find ./ -name '*zip'`
     unzip $zipFile
